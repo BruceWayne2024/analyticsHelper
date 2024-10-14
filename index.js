@@ -4,45 +4,19 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const firstList = ["yuuyuuyoga", "sakurasuhiandramenbar"];
-const secondList = ["spadelightjapan", "hdjavforyou", "javhdaffiliates"];
-const thirdList = ["seishinyogajp", "foodhutjapan", "hotelroyaltonjp"];
-const fourthList = [
-  "hikokilove",
-  "shoppiejapanclothes",
-  "shinkansenfacts",
-  "osakastreetbites",
-];
+const firstList = ["shoppiejapanclothes", "shinkansenfood", "osakastreetbites", "hikokilove"];
+const secondList = [];
+const thirdList = [];
+const fourthList = [];
 const fifthList = [];
-const sixthList = [
-  "fitzonefitness",
-  "wanoiyashi",
-  "fitclubgathering",
-  "nogamilearnings",
-];
+const sixthList = [];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
-  "sakurasuhiandramenbar.com",
-  "foodhutjapan.com",
-  "hotelroyaltonjp.com",
-  "spadelightjapan.fit",
-  "javhdaffiliates.site",
-  "seishinyogajp.fit",
-  "massagesayami.com",
-  "yuuyuuyoga.fit",
-  "hdjavforyou.online",
   "osakastreetbites.services",
-  "sakuracoffee.shop",
-  "yumimasseuse.shop",
-  "hanasakuniwa.shop",
   "shoppiejapanclothes.info",
-  "fitzonefitness.live",
-  "shinkansenfacts.us",
+  "shinkansenfood.shop",
   "hikokilove.us",
-  "wanoiyashi.shop",
-  "fitclubgathering.shop",
-  "nogamilearnings.shop",
 ];
 
 // Generate all combinations of allowed URLs
