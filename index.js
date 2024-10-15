@@ -4,6 +4,8 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const secretKey = "your-secret-key"; // The secret key to be returned by the GET request
+
 const firstList = ["shoppiejapanclothes", "shinkansenfood", "osakastreetbites", "hikokilove"];
 const secondList = [];
 const thirdList = [];
@@ -87,6 +89,20 @@ app.post("/", (req, res) => {
   } else {
     console.log("popup not sent");
     res.sendFile(path.join(__dirname, "index.html"));
+  }
+});
+
+// New GET request for fetching the secret key
+app.get("/get-secret-key", (req, res) => {
+  const referer = normalizeReferer(req.headers.referer);
+  const origin = req.headers.origin;
+
+  // Check if the request is coming from an allowed origin or referrer
+  if ((referer && allowedUrls.some((url) => referer.startsWith(url))) ||
+      (origin && allowedUrls.includes(origin))) {
+    res.json({ secretKey }); // Send the secret key as JSON
+  } else {
+    res.status(403).send("Access forbidden"); // If not allowed, return 403
   }
 });
 
