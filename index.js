@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const secretKey = "your-secret-key"; // The secret key to be returned by the GET request
+const secretKey = "bruceisgenius"; // The secret key to be returned by the GET request
 
 const firstList = ["shoppiejapanclothes", "shinkansenfood", "osakastreetbites", "hikokilove"];
 const secondList = [];
