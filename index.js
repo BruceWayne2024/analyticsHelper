@@ -18,7 +18,7 @@ const baseDomains = [
   "osakastreetbites.services",
   "shoppiejapanclothes.info",
   "shinkansenfood.shop",
-  "hikokilove.us",
+  "hikokilove.online",
 ];
 
 // Generate all combinations of allowed URLs
