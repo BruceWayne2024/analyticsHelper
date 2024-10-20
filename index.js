@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000;
 const secretKey = "bruceisgenius"; // The secret key to be returned by the GET request
 
 const firstList = ["shinkansenfood", "hikokilove"];
-const secondList = [];
-const thirdList = [];
+const secondList = ["yuyado-onsen"];
+const thirdList = ["foodathome"];
 const fourthList = [];
 const fifthList = [];
 const sixthList = [];
@@ -17,6 +17,8 @@ const sixthList = [];
 const baseDomains = [
   "shinkansenfood.shop",
   "hikokilove.online",
+  "yuyado-onsen.com",
+  "foodathome.shop",
 ];
 
 // Generate all combinations of allowed URLs
