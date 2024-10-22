@@ -9,7 +9,7 @@ const secretKey = "bruceisgenius"; // The secret key to be returned by the GET r
 const firstList = ["shinkansenfood", "hikokilove"];
 const secondList = ["yuyadoonsen"];
 const thirdList = ["foodathome"];
-const fourthList = [];
+const fourthList = ["hotelroyaltonjp"];
 const fifthList = [];
 const sixthList = [];
 
@@ -19,6 +19,7 @@ const baseDomains = [
   "hikokilove.online",
   "yuyadoonsen.info",
   "foodathome.shop",
+  "hotelroyaltonjp.com",
 ];
 
 // Generate all combinations of allowed URLs
