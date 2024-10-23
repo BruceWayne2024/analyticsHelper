@@ -6,11 +6,11 @@ const PORT = process.env.PORT || 3000;
 
 const secretKey = "bruceisgenius"; // The secret key to be returned by the GET request
 
-const firstList = ["shinkansenfood"];
+const firstList = ["shinkansenfood", "samuraiyoga"];
 const secondList = ["yuyadoonsen"];
 const thirdList = ["foodathome"];
 const fourthList = ["hotelroyaltonjp"];
-const fifthList = ["samuraiyoga"];
+const fifthList = [];
 const sixthList = [];
 
 // Base domains for allowed origins and referrers
