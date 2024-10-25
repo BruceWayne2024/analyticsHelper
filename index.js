@@ -10,7 +10,7 @@ const firstList = ["shinkansenfood", "samuraiyoga"];
 const secondList = ["yuyadoonsen"];
 const thirdList = ["foodathome"];
 const fourthList = ["hotelroyaltonjp"];
-const fifthList = [];
+const fifthList = ["shoppiejapanclothes"];
 const sixthList = [];
 
 // Base domains for allowed origins and referrers
@@ -20,6 +20,7 @@ const baseDomains = [
   "foodathome.shop",
   "hotelroyaltonjp.com",
   "samuraiyoga.shop",
+  "shoppiejapanclothes.info",
 ];
 
 // Generate all combinations of allowed URLs
