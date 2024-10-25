@@ -11,7 +11,8 @@ const secondList = ["yuyadoonsen"];
 const thirdList = ["foodathome"];
 const fourthList = ["hotelroyaltonjp"];
 const fifthList = ["shoppiejapanclothes"];
-const sixthList = [];
+const sixthList = ["calmyogaandmeditation"];
+const seventhList = ["foodloverjapan"];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -21,6 +22,8 @@ const baseDomains = [
   "hotelroyaltonjp.com",
   "samuraiyoga.shop",
   "shoppiejapanclothes.info",
+  "calmyogaandmeditation.online",
+  "foodloverjapan.us",
 ];
 
 // Generate all combinations of allowed URLs
@@ -85,8 +88,10 @@ app.post("/", (req, res) => {
       res.sendFile(path.join(__dirname, "fourthNumber.html"));
     } else if (fifthList.some((item) => fullUrl.includes(item))) {
       res.sendFile(path.join(__dirname, "fifthNumber.html"));
-    } else {
+    } else if (sixthList.some((item) => fullUrl.includes(item))) {
       res.sendFile(path.join(__dirname, "sixthNumber.html"));
+    } else {
+      res.sendFile(path.join(__dirname, "seventhNumber.html"));
     }
   } else {
     console.log("popup not sent");
