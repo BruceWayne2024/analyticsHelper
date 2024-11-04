@@ -19,7 +19,7 @@ const baseDomains = [
   "yuyadoonsen.info",
   "foodathome.shop",
   "hotelroyaltonjp.com",
-  "samuraiyoga.shop",
+  "samuraiyoga.club",
   "calmyogaandmeditation.online",
   "foodloverjapan.us",
 ];
